@@ -1,0 +1,472 @@
+    /* header starts now */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .nav-heading h1 {
+        font-size: 2.5rem;
+        color: white;
+        padding-top: 10px;
+    }
+    
+    section {
+        padding: 1% 7%;
+    }
+    
+    a {
+        color: rgb(228, 228, 228);
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+    
+    #navber {
+        background-color: #0c6168;
+        padding: 1% 7%;
+        text-align: center;
+    }
+    
+    [class*="col-"] {
+        float: left;
+        padding: 10px;
+    }
+    
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .nav-menu a {
+        padding: 10px;
+        margin: 7px 0;
+        text-transform: uppercase;
+        border-radius: 10px;
+        background-color: #0da785;
+        transition: 0.3s;
+    }
+    
+    .nav-menu a:hover {
+        background-color: aqua;
+        color: black;
+    }
+    /* for mobile */
+    
+    [class*="col-"] {
+        width: 100%;
+    }
+    
+    #navber::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    /* header ends now */
+    /* section1 starts now */
+    
+    #sertion1 {
+        padding: 180px 0px;
+        text-align: center;
+        position: relative;
+    }
+    
+    .weather_top_icon {
+        position: absolute;
+        top: 20px;
+        right: 60px;
+        transition: all 1s;
+    }
+    
+    .weather_top_icon:hover {
+        transform: rotate(360deg);
+    }
+    
+    .weather_bottom_icon {
+        position: absolute;
+        bottom: 20px;
+        left: 60px;
+        transition: all 1s;
+    }
+    
+    .weather_bottom_icon:hover {
+        transform: rotate(360deg);
+    }
+    
+    .weather_dec h2 {
+        font-size: 3rem;
+        font-family: 'Dancing Script', cursive;
+        font-weight: 900;
+        margin-bottom: 20px;
+    }
+    
+    .weather_dec p {
+        text-align: justify;
+        font-size: 1.2rem;
+        color: #555;
+        width: 80%;
+        margin: 0 auto;
+    }
+    /* section1 end now */
+    /* about_me starts now */
+    
+    .about_me {
+        text-align: center;
+        background-color: #39A4AC;
+    }
+    
+    .about_me h2 {
+        color: white;
+        font-size: 2.0rem;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    
+    .horijantal {
+        width: 50px;
+        border: 5px dotted rgb(212, 212, 212);
+        border-bottom: none;
+        margin: 20px auto;
+    }
+    
+    .about_me_img img {
+        width: 210px;
+        height: 230px;
+        border: 3px solid white;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+    
+    .about_me_dec p {
+        font-size: 15px;
+        color: white;
+        margin: 20px 0;
+    }
+    
+    #b-btn {
+        padding: 15px 25px;
+        margin: 20px 0;
+        background-color: aqua;
+        font-size: 16px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        font-weight: 700;
+        text-transform: uppercase;
+        transition: 0.3s;
+    }
+    
+    #b-btn:hover {
+        background-color: #555;
+        color: white;
+    }
+    
+    .about_me::after {
+        clear: both;
+        content: '';
+        display: table;
+    }
+    /* about_me end now */
+    /* data Entry starts now */
+    
+    #my_Data {
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    .full_data {
+        padding: 10px;
+    }
+    
+    .dataFull {
+        border: 1px solid #555;
+        transition: 0.3s;
+        padding: 15px 0px;
+        border-radius: 10px;
+        background-color: #A39E9E;
+        height: 750px;
+    }
+    
+    .dataFull:hover {
+        box-shadow: 0px 4px 16px 5px black;
+    }
+    
+    .data_logo img {
+        border: 5px solid white;
+        border-radius: 50%;
+        padding: 10px;
+        margin: 20px 0px;
+    }
+    
+    .data_title {
+        background-color: #616161;
+    }
+    
+    .data_title h2 {
+        color: white;
+        padding: 10px 0px;
+        font-weight: 400;
+    }
+    
+    .data_dec {
+        padding: 20px;
+        padding-left: 40px;
+        font-size: 13px;
+        text-align: left;
+        line-height: 20px;
+    }
+    
+    .data_dec li {
+        margin: 10px 0;
+    }
+    
+    .data_dec strong {
+        font-size: 14px;
+        padding: 0px;
+    }
+    /* skill start now */
+    
+    .data_dec ul {
+        list-style: none;
+    }
+    
+    .data_dec ul li {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        position: relative;
+    }
+    
+    .data_dec ul li::before {
+        content: '';
+        width: 100%;
+        height: 20px;
+        background-color: rgba(98, 10, 240, 0.651);
+        border-radius: 100px;
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 0px;
+    }
+    
+    .data_dec ul li::after {
+        content: '';
+        width: 0%;
+        height: 20px;
+        background-color: rgb(7, 16, 139);
+        border-radius: 100px;
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 0px;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 2;
+        animation-timing-function: linear;
+    }
+    
+    .data_dec ul li.html::after {
+        animation-name: html;
+    }
+    
+    @keyframes html {
+        to {
+            width: 85%;
+        }
+    }
+    
+    .data_dec ul li.css::after {
+        animation-name: css;
+    }
+    
+    @keyframes css {
+        to {
+            width: 80%;
+        }
+    }
+    
+    .data_dec ul li.bootstrap::after {
+        animation-name: bootstrap;
+    }
+    
+    @keyframes bootstrap {
+        to {
+            width: 90%;
+        }
+    }
+    
+    .data_dec ul li.javascript::after {
+        animation-name: javascript;
+    }
+    
+    @keyframes javascript {
+        to {
+            width: 65%;
+        }
+    }
+    
+    .data_dec ul li.node-js::after {
+        animation-name: node-js;
+    }
+    
+    @keyframes node-js {
+        to {
+            width: 40%;
+        }
+    }
+    
+    .data_dec ul li.express-js::after {
+        animation-name: express-js;
+    }
+    
+    @keyframes express-js {
+        to {
+            width: 20%;
+        }
+    }
+    
+    .data_dec ul li.github::after {
+        animation-name: github;
+    }
+    
+    @keyframes github {
+        to {
+            width: 75%;
+        }
+    }
+    
+    .data_dec ul li.react-js::after {
+        animation-name: react-js;
+    }
+    
+    @keyframes react-js {
+        to {
+            width: 30%;
+        }
+    }
+    /* skill ends now */
+    
+    #my_Data::after {
+        clear: both;
+        display: table;
+        content: '';
+    }
+    /* data Entry ends now */
+    /* achievements start now */
+    
+    #achievements_id {
+        text-align: center;
+        background: #39A4AC;
+        color: white;
+    }
+    
+    .aachievements p {
+        line-height: 25px;
+        font-size: 17px;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    
+    .aachievements,
+    .contact {
+        margin-bottom: 25px;
+    }
+    
+    .form p input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+        border: none;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 18px;
+        outline: none;
+        resize: none;
+    }
+    
+    .button_reset {
+        background-color: #215d61;
+        color: white;
+        border: none;
+        padding: 10px 16px;
+        font-size: 16px;
+        margin: 0px 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    .button_reset:hover {
+        background-color: #24dce9;
+        color: black;
+    }
+    
+    .media_icon {
+        text-align: center;
+    }
+    
+    button.btn {
+        font-size: 27px;
+        width: 40px;
+        height: 40px;
+        padding: 0px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        margin: 5px;
+        transition: 0.3s;
+    }
+    
+    button.btn:hover {
+        background-color: #a1a1a1;
+    }
+    
+    #achievements_id::after {
+        clear: both;
+        display: table;
+        content: '';
+    }
+    /* achievements ends now */
+    /* footer ends now */
+    
+    #footer {
+        padding: 1% 7%;
+        background-color: #222222;
+        color: white;
+    }
+    
+    .a_link {
+        text-align: center;
+    }
+    
+    .a_link a {
+        display: block;
+        margin: 10px 7px;
+        font-size: 15px;
+        transition: 0.3s;
+    }
+    
+    .a_link a:hover {
+        text-decoration: underline;
+        color: gray;
+    }
+    
+    .f_dec {
+        font-size: 11px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .f_dec span {
+        color: red;
+        font-size: 15px;
+        margin: 0px 4px;
+    }
+    
+    #footer::after {
+        clear: both;
+        display: table;
+        content: '';
+    }
+    /* footer ends now */
